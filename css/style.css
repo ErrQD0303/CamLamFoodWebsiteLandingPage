@@ -26,7 +26,7 @@
     list-style: none;
     display: flex;
     align-items: center;
-    gap: 3.6rem;
+    gap: 50px;
     padding-top: 36px;
     text-transform: capitalize;
 }
@@ -36,8 +36,8 @@
     display: inline-block;
     text-decoration: none;
     color: #333;
-    font-weight: 500;
-    font-size: 1.7rem;
+    font-weight: 400;
+    font-size: 1.5rem;
     transition: color 0.3s;
 }
 
@@ -46,8 +46,13 @@
     color: #01a495;
 }
 
+li .main-nav-link.homepage {
+    color: #01a495;
+}
+
 .nav-bar .main-nav-purchase-cta:link,
 .nav-bar .main-nav-purchase-cta:visited {
+    min-width: 209px;
 }
 
 .nav-bar .main-nav-purchase-cta:hover,
@@ -58,19 +63,19 @@
 
 .phone-icon {
     width: 1.5rem;
-    transform: translate(0, 10%);
 }
 
 /********************************/
 /* HERO */
 /********************************/
 .section-hero {
-    padding: 138px 100px 0 0;
-    background-image: linear-gradient(#fedd02cc, #fedd02cc),
-        url("/img/hero/pexels-pok-rie-4847563.jpg");
+    position: relative;
 }
 .hero {
+    padding: 138px 100px 138px 0;
     text-transform: capitalize;
+    background-image: linear-gradient(#fedd02dd, #fedd02dd),
+        url("/img/hero/pexels-pok-rie-4847563.jpg");
 }
 .hero-img {
     max-width: 100%;
@@ -91,4 +96,58 @@
     justify-content: flex-start;
     align-items: center;
     gap: 20px;
+}
+.hero-product-characteristic {
+    position: absolute;
+    left: 50%;
+    bottom: 0%;
+    transform: translate(-50%, 60%);
+    box-shadow: 0 0 11px 0 rgba(0, 0, 0, 0.07);
+    padding: 30px 0 23px 0;
+    background-color: #fff;
+}
+
+.hero-product-characteristic-box {
+    display: flex;
+    justify-content: center;
+    gap: 0;
+    background-color: #fff;
+}
+
+.sub-characteristic {
+    flex: 0 1 33.3%;
+    border-right: 0.1px solid black;
+    text-align: center;
+    padding: 20px;
+}
+
+.sub-characteristic:last-child {
+    border: none;
+}
+
+.characteristic-logo,
+.characteristic-logo-description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.characteristic-logo {
+    color: #f4d567;
+    font-size: 2.4rem;
+    gap: 8px;
+}
+
+.characteristic-description {
+    color: black;
+    text-transform: capitalize;
+}
+.characteristic-logo-description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 24px;
+    color: #818181;
+    font-weight: 300;
+    font-size: 1.5rem;
 }

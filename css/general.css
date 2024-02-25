@@ -49,7 +49,7 @@ html {
 }
 
 body {
-    font-family: "Exo", sans-serif;
+    font-family: "Exo 2", sans-serif;
     line-height: 1;
     font-weight: 400;
     color: #2d2d2d;
@@ -65,8 +65,6 @@ body {
     max-width: 120rem;
     padding: 0 3.2rem;
     margin: 0 auto;
-    border-left: 3px solid black;
-    border-right: 3px solid black;
 }
 
 .grid {
@@ -133,13 +131,17 @@ body {
 
 .btn:link,
 .btn:visited {
-    padding: 15px 45px;
+    padding: 15px 40px;
     border-radius: 6px;
     color: #fff;
     text-transform: uppercase;
     text-decoration: none;
     font-size: 1.6rem;
     letter-spacing: -0.5px;
+    min-width: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .btn:hover,
@@ -160,6 +162,7 @@ body {
 .btn--green:link,
 .btn--green:visited {
     background-color: #01a495;
+    gap: 5px;
 }
 
 .btn--green:hover,
