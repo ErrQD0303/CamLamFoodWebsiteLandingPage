@@ -1,7 +1,5 @@
-@import url("/font/Neuron-Angled-SC/stylesheet.css");
-
 /* --- 01 TYPOGRAPHY SYSTEM
-- Font Family: Neuron angled sc, sans  serif
+- Font Family: Exo, sans  serif
 
 - Font sizes (px)
 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
@@ -67,11 +65,13 @@ body {
     max-width: 120rem;
     padding: 0 3.2rem;
     margin: 0 auto;
+    border-left: 3px solid black;
+    border-right: 3px solid black;
 }
 
 .grid {
     display: grid;
-    column-gap: 6.4rem;
+    column-gap: 7.2rem;
     row-gap: 9.6rem;
 }
 
@@ -129,4 +129,40 @@ body {
     text-transform: uppercase;
     margin-bottom: 1.6rem;
     letter-spacing: 0.75px;
+}
+
+.btn:link,
+.btn:visited {
+    padding: 15px 45px;
+    border-radius: 6px;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1.6rem;
+    letter-spacing: -0.5px;
+}
+
+.btn:hover,
+.btn:visited {
+    transition: all 0.6s;
+}
+
+.btn--brown:link,
+.btn--brown:visited {
+    background-color: #3b3c33;
+}
+
+.btn--brown:hover,
+.btn--brown:active {
+    background-color: #01a495;
+}
+
+.btn--green:link,
+.btn--green:visited {
+    background-color: #01a495;
+}
+
+.btn--green:hover,
+.btn--green:active {
+    background-color: #3b3c33;
 }
